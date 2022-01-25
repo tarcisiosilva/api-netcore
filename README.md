@@ -22,7 +22,41 @@ URL Params
 
 < /api/users >
 
+    
+    GET
 example : localhost:19416/api/users 
+ ##   
+    DELETE
+example : localhost:19416/api/users/{ID}
+##    
+    POST
+example : localhost:19416/api/users 
+    
+      {   
+        
+        "nome": "Tarcisio Silva",
+        "sexo": "M",
+        "email": "taarcisiosilva@gmail.com",
+        "naturalidade": "Curitiba",
+        "cpf": "0000000000 ",
+        "date_create": "2022-01-25T03:00:00Z",
+        "lastModified": "2022-01-25T03:00:00Z"
+    }
+    
+##    
+    PUT
+example : localhost:19416/api/users 
+    
+      {   
+        "userId": 1,
+        "nome": "Tarcisio Silva",
+        "sexo": "M",
+        "email": "taarcisiosilva@gmail.com",
+        "naturalidade": "Curitiba",
+        "cpf": "0000000000 ",
+        "date_create": "2022-01-25T03:00:00Z",
+        "lastModified": "2022-01-25T03:00:00Z"
+    }
 
 
 
@@ -47,4 +81,10 @@ For this project is necessary used json body for send data to database  in api.
     
  ##
  
- In 
+ In appsettings.json how settings database  at moment exists my configuration test database but for your  is necessary  setting your datas.
+    
+ ##
+    
+ Is necessary install  :  mvc.newtonsoft ,  mongodb.driver  packages 
+    
+    
